@@ -1,11 +1,14 @@
+body {
+  background-color: #282D35;
+  background-image: url("../public/reactjs-icon\ 2.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
 .App {
-  width: 550px;
-  height: 450px;
   display: flex;
-  align-content: center;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #282D35;
 }
 
 
@@ -16,6 +19,7 @@
 
 .logo-img {
   width: 50px;
+  margin: 0;
 }
 
 .nav-bar {
@@ -37,8 +41,6 @@ main {
 
 .main-title {
     color: white;
-    /* font-size: 40px; */
-    /* font-weight: 700; */
     letter-spacing: -0.05px;
 }
 
@@ -53,4 +55,8 @@ main {
 .main-facts li::marker {
     font-size: 1.2rem;
     color: #61DAFB;
+}
+
+footer {
+  margin-top: 50px;
 }
