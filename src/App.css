@@ -1,19 +1,12 @@
-body {
-  background-color: #282D35;
-  background-image: url("../public/reactjs-icon\ 2.png");
-  background-repeat: no-repeat;
-  background-position: center right;
-}
-
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100vh;
 }
 
-
 .header {
-  background-color: #21222A;
+  background-color: #fff;
+  box-shadow: 0 2px 8px black;
 }
 
 
@@ -36,16 +29,19 @@ body {
 }
 
 main {
-  margin: 50px 30px;
+  height: 100%;
+  background-image: url("../public/images/react-icon-light.png");
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 .main-title {
-    color: white;
     letter-spacing: -0.05px;
+    padding: 20px;
 }
 
 .main-facts {
-  width: 330px;
+  padding-left: 80px;
 }
 
 .main-facts li {
@@ -57,6 +53,7 @@ main {
     color: #61DAFB;
 }
 
-footer {
-  margin-top: 50px;
+.dark {
+  background-color: #282D35;
+  color: white;
 }
