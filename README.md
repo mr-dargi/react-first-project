@@ -15,7 +15,7 @@ This project built for learning react basic.
 
 ### Screenshot
 
-<img src="localhost_3000_.png">
+
 
 ## My process
 
