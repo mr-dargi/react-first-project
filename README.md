@@ -14,7 +14,9 @@ This project built for learning react basic.
 
 
 ### Screenshot
+![](./screenshot1.png)
 
+![](./screenshot2.png)
 
 
 ## My process
