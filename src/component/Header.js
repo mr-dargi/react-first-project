@@ -1,17 +1,17 @@
-export default function Header() {
+export default function Header(props) {
   return (
-      <header className="header dark">
-        <nav className="nav-bar">
+        <nav className={props.darkMode ? "dark" : ""}>
           <img className="logo-img" src="./images/react-logo.png" alt="logo" />
-          <div className="switch-section">
-            <p>light</p>
-            <label className="switch">
-              <input type="checkbox" checked />
-              <span className="slider round"></span>
-            </label>
-            <p>dark</p>
+          <div className="toggler">
+            <p className="toggler--light">Light</p>
+            <div 
+                className="toggler--slider"
+                onClick={props.toggleDarkMode}
+            >
+              <div className="toggler--slider--circle"></div>
+            </div>
+            <p className="toggler--dark">Dark</p>
           </div>
         </nav>
-      </header>
   );
 };

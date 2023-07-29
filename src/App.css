@@ -4,96 +4,85 @@
   height: 100vh;
 }
 
-.header {
-  background-color: #fff;
-  box-shadow: 0 2px 8px black;
-}
-
-.header.dark {
-  background-color: #21222A;
-  color: white;
-}
-
 .logo-img {
   width: 50px;
   margin: 0;
 }
 
-.nav-bar {
+nav {
+  background-color: #fff;
+  box-shadow: 0 2px 8px black;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.switch-section {
-  margin-right: 5px;
-  display: flex;
-  align-items: center;
+nav.dark {
+  background-color: #21222A;
+  color: white;
 }
 
-.switch-section > * {
+.toggler {
+  display: flex;
+  align-items: center;
   margin-right: 10px;
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 55px;
-  height: 28px;
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
 }
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
 }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 4px;
-  bottom: 4px;
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
   border-radius: 50%;
 }
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2B283A;
+}
+
+nav.dark .toggler--light {
+  color: #918E9B;
+}
+
+.toggler--dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+  color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
 
 main {
   height: 100%;
